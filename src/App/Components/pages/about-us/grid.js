@@ -3,7 +3,6 @@ import ImageOne from "./images/community.jpg";
 import ImageTwo from "./images/socialmedia.jpg";
 import ImageThree from "./images/offices.jpg";
 import { Col, Row, Container } from "react-bootstrap";
-import layoutUtilities from "../../../../global-styles/layout-utilities";
 
 const grid = () => {
   return (
