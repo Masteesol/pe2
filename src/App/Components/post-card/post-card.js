@@ -7,7 +7,7 @@ import { HollowButton } from "../button";
 import RoundedImage from "../rounded-image/rounded-image";
 import ModalContextPosts from "../../../context/ModalContextPosts";
 import styled from "styled-components";
-import { useSearchParams, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Colours } from "../../../global-styles";
 
 import reformatTime from "../../../utils/reformat-time";
@@ -23,7 +23,7 @@ const PostCard = ({ userData }) => {
   const [data, index] = userData;
   const { title, body, created, media, author, comments } = data;
   const { avatar, name } = author;
-  const [modalShowPost, setModalShowPost] = useContext(ModalContextPosts);
+  const [_modalShowPost, setModalShowPost] = useContext(ModalContextPosts);
   const openPost = () => {
     setModalShowPost([true, "view", data]);
   };

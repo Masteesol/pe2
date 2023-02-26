@@ -35,7 +35,7 @@ const Container = styled.div`
 `;
 
 export default () => {
-  const [modalShow, setModalShow] = useContext(ModalContext);
+  const [_modalShow, setModalShow] = useContext(ModalContext);
   const handleClick = () => {
     setModalShow([true, "write"]);
   };

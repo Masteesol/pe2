@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Colours } from "../../../global-styles";
-const { passive, primary, primaryHover, bgLightMode, bgDarkMode } = Colours;
+const { passive, primary, primaryHover, bgLightMode } = Colours;
 
 export const Button = styled.button`
   border-radius: 50px;

@@ -39,19 +39,19 @@ export default () => {
   const [allPosts, setAllPosts] = useState([]);
   const [userData, setUserData] = useState();
   const [ownProfileData, setOwnProfileData] = useState([]);
-  const [source, setSource] = useContext(BannerSource);
+  const [_source, setSource] = useContext(BannerSource);
 
   const [searchParams] = useSearchParams();
   const username = searchParams.get("name");
   const postsUrl = URLSingleUserPost(username);
   const userUrl = URLUserdata(username);
-  const [counterPost, setCounterPost] = useState(0);
+  const [_counterPost, setCounterPost] = useState(0);
   const dataFetchedRefPost = useRef(false);
 
-  const [counterUser, setCounterUser] = useState(0);
+  const [_counterUser, setCounterUser] = useState(0);
   const dataFetchedRefUser = useRef(false);
 
-  const [counterOwnProfile, setCounterOwnProfile] = useState(0);
+  const [_counterOwnProfile, setCounterOwnProfile] = useState(0);
   const dataFetchedRefOwnProfile = useRef(false);
 
   const fetchData = async () => {
@@ -123,8 +123,8 @@ export default () => {
     fetchOwnProfileData();
   }, []);
 
-  console.log(userData);
-  console.log(allPosts);
+  //console.log(userData);
+  //console.log(allPosts);
   setFollowed(ownProfileData ? ownProfileData.following : "");
 
   const isFollowed = followed

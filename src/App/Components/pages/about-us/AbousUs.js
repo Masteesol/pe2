@@ -32,7 +32,7 @@ const LoginButton = styled.div`
 `;
 
 const AboutUs = () => {
-  const [modalShow, setModalShow] = useContext(ModalContext);
+  const [_modalShow, setModalShow] = useContext(ModalContext);
   const [auth] = useContext(AuthContext);
 
   const activateSaveButton = (e) => {

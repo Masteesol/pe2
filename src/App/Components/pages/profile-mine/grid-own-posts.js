@@ -27,7 +27,7 @@ export default ({ state }) => {
   const display = state === true ? "d-block" : "d-none";
   const [auth] = useContext(AuthContext);
   const [postData, setPostData] = useState([]);
-  const [counter, setCounter] = useState(0);
+  const [_counter, setCounter] = useState(0);
   const dataFetchedRef = useRef(false);
   const fetchData = async () => {
     if (auth) {

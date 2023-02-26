@@ -10,7 +10,7 @@ import "./index.scss";
 
 export default function ({ children }) {
   const [auth] = useContext(AuthContext);
-  const [source, setSource] = useContext(BannerSource);
+  const [_source, setSource] = useContext(BannerSource);
   setSource(auth.banner);
   const navigate = useNavigate();
   const [searchParams] = useSearchParams();

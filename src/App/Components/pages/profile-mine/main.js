@@ -12,11 +12,11 @@ import AuthContext from "../../../../context/AuthContext";
 import FollowContext from "../../../../context/FollowContext";
 
 const ProfileInfoElement = () => {
-  const [followed] = useContext(FollowContext);
+  //const [followed] = useContext(FollowContext);
   const [clicked, setClicked] = useState([true, false, false]);
   const [auth] = useContext(AuthContext);
   const [profileData, setProfileData] = useState([]);
-  const [counter, setCounter] = useState(0);
+  const [_counter, setCounter] = useState(0);
   const dataFetchedRef = useRef(false);
 
   const fetchData = async () => {

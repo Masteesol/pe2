@@ -5,7 +5,7 @@ import ContentContext from "./context/ContentContext";
 
 export default () => {
   const [clicked, setClicked] = useState([true, false]);
-  const [selectedContent, setSelectedContent] = useContext(ContentContext);
+  const [_selectedContent, setSelectedContent] = useContext(ContentContext);
 
   const handleClick = (e) => {
     const itemIndex = e.target.attributes["data"].value;
