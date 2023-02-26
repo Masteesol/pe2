@@ -10,7 +10,7 @@ export default () => {
   const handleClick = (e) => {
     const itemIndex = e.target.attributes["data"].value;
     const newState = clicked.map((number, index) =>
-      index == itemIndex ? (number = true) : (number = false)
+      index === itemIndex ? (number = true) : (number = false)
     );
     setClicked(newState);
     setSelectedContent(newState);
