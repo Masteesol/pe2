@@ -83,9 +83,6 @@ export default function (props) {
     showModal[2] ? showModal[2] : -1;
   const { name, avatar } = author ? author : -1;
   //console.log(reactions);
-  const handleReactionsExisting = (e) => {
-    const emoji = e.target.innerText;
-  };
   if (showModal[1] === "view") {
     return (
       <Modal
@@ -155,7 +152,7 @@ export default function (props) {
             {reactions &&
               reactions.map((item) => {
                 return (
-                  <div onClick={handleReactionsExisting}>
+                  <div>
                     <span>{item.symbol}</span>
                     <span style={{ color: colours.bgLightMode.dark }}>
                       {item.count}

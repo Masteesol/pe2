@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useContext, useState, useEffect, useRef } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import PostCard from "../../post-card";
 import {
   base,
